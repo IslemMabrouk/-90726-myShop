@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySHop - Inscription</title>
+</head>
+<body>
+    <!-- Titre Pirincipale -->
+     <h1>My Shop</h1>
+
+     <!-- Créer une liste non ordonnée -->
+      <!-- Menu de navigation -->
+      <ul>
+        <li>
+            <a href="../index.html">Acceuil</a>
+        </li>
+        <li>
+            <a href="about.html">A propos</a>
+        </li>
+        <li>
+            <a href="">Produits</a>
+        </li>
+        <li>
+            <a href="">Inscription</a>
+        </li>
+        <li>
+            <a href="">Connexion</a>
+        </li>
+        <li>
+            <a href="">Contact</a>
+        </li>
+      </ul>
+
+
+      <!-- action : ou on envoie les donneés du formulaire pour faire le traitement -->
+       <!-- method : comment envoyer les données (GET/POST) -->
+        <!-- GET : récupération des données (rechercher/filtre) -->
+        <!-- POST : Créer/Ajouter des données (inscription/connexion)-->
+      <form action="" method="">
+        <h2>Inscrption</h2>
+        <!-- for : indique à quel élément le label est associé -->
+        <!-- id : donne l'identifiant de cet element -->
+        <!-- for et id travaillent ensemble pour relier le label à son champ -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" placeholder="Votre Nom" required> <br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="exemple@gmail.com" required> <br>
+
+        <label for="pwd">Mot de passe :</label>
+        <input type="password" id="pwd" placeholder="Votre mot de passe" required> <br>
+
+        <!-- Radio -->
+        <label>Genre :</label>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label>
+
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+
+        <input type="radio" id="autre" name="genre" value="autre">
+        <label for="autre">Autre</label> <br>
+
+        <!-- checkbox -->
+         <label> Intérets : </label>
+         <input type="checkbox" name="interets" id="vetements" value="vetements" >
+         <label for="vetements"> Vetements </label>
+
+         <input type="checkbox" name="interets" id="accessoires" value="accessoires" >
+         <label for="vetements"> Accessoires </label> <br>
+
+        <!-- Liste déroulante  -->
+         <label for="pays">Pays :</label>
+         <select name="pays" id="pays">
+            <option value="france">France</option>
+            <option value="tunisie">Tunisie</option>
+         </select> <br>
+
+         <button type="submit">S'inscrire</button>
+      </form>
+
+
+
+      <!-- Pieds de page -->
+      <!-- Liens vers : fb , insta -->
+       <a href="https://www.decathlon.fr/" target="_blank">Facebook</a>
+       <a href="https://www.decathlon.fr/" target="_blank">Instagram</a>
+       <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
+       <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
+       <!-- tel : Lien vers un numéro de téléphone , il permet de lancer un appel vers ce num -->
+       <a href="tel:123456789">123456789</a>
+       <!-- download : Télévharger automatiquement le pdf -->
+        <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
+       <a href="assets/pdf/Mentions légales.pdf" download="document.pdf" >Mentions Légales</a>
+</body>
+</html>

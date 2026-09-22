@@ -16,13 +16,13 @@
             <a href="index.html">Acceuil</a>
         </li>
         <li>
-            <a href="pages/about.html" target="_blank">A propos</a>
+            <a href="pages/about.html">A propos</a>
         </li>
         <li>
             <a href="">Produits</a>
         </li>
         <li>
-            <a href="">Inscription</a>
+            <a href="pages/signup.html">Inscription</a>
         </li>
         <li>
             <a href="">Connexion</a>
@@ -34,10 +34,12 @@
 
       <!-- Présentation du site -->
      <h2>Bienvenue sur notre boutique</h2>
-     <p>
-        MyShop est un boutique de vente en ligne. <br>
+    <p>
+        MyShop est un boutique de vente en ligne.
+    </p>
+    <p>
         Découvrez nos robes, chemises, jeans et accessoires tendance et profitez de nos promotions.
-     </p>
+    </p>
 
 
      <h2>Catégories</h2>
@@ -60,9 +62,97 @@
 
 
      <h2>Nos Produits</h2>
-     <h3>Produit 1</h3>
+
+     <!-- Produit 1 -->
+     <h3>Veste Femme</h3>
+     <img src="assets/images/veste-femme.webp" alt="Veste Femme" style="width: 200px;">
+     <p>Description Produit 1</p>
+     <p>Prix : 20 £</p>
+     <button type="button">Acheter</button>
+
+     <!-- Produit 2 -->
+     <h3>Chemise Homme</h3>
+     <img src="assets/images/chemise-homme.webp" alt="Chemise Homme" style="width: 200px;">
+     <p>Description Produit 2</p>
+     <p>Prix : 10 £</p>
+     <button type="button">Acheter</button>
+
+     <!-- Produit 3 -->
+     <h3>Robe Soirée</h3>
+     <img src="assets/images/robe-femme.jpg" alt="Robe soirée en bleu" style="width: 200px;">
+     <p>Description Produit 3</p>
+     <p>Prix : 25 £</p>
+     <button type="button">Acheter</button>
+
+     <!-- Liste des produits dans un tableau -->
+      <table border="1">
+        <!-- Ligne du tableau -->
+        <tr>
+            <!-- Cellule du tableau -->
+            <td>Catégories</td>
+            <td>Produit</td>
+            <td>Images</td>
+            <td>Description</td>
+            <td>Prix</td>
+            <td>Action</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" >Homme</td>
+            <td>Chemise</td>
+            <td>
+                <img src="assets/images/chemise-homme.webp" alt="Chemise Homme" style="width: 100px;">
+            </td>
+            <td>Description du produit 1</td>
+            <td>10</td>
+            <td>
+                <button type="button">Acheter</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Jean</td>
+            <td>
+                <img src="assets/images/jean-homme.jfif" alt="Jean Homme" style="width: 100px;">
+            </td>
+            <td>Description du produit 2</td>
+            <td>15</td>
+            <td>
+                <button type="button">Acheter</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Femme</td>
+            <td>Veste Femme</td>
+            <td>
+                <img src="assets/images/veste-femme.webp" alt="Veste Femme" style="width: 100px;">
+            </td>
+            <td>Description produit 3</td>
+            <td>30</td>
+            <td>
+                <button type="button">Acheter</button>
+            </td>
+        </tr>
+
+        <!-- Ligne Promotion -->
+        <tr>
+            <td>Promotion</td>
+            <td colspan="5">20% sur tous les articles</td>
+        </tr>
+        
+      </table>
 
      <!-- Pieds de page -->
       <!-- Liens vers : fb , insta -->
+       <a href="https://www.decathlon.fr/" target="_blank">Facebook</a>
+       <a href="https://www.decathlon.fr/" target="_blank">Instagram</a>
+       <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
+       <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
+       <!-- tel : Lien vers un numéro de téléphone , il permet de lancer un appel vers ce num -->
+       <a href="tel:123456789">123456789</a>
+       <!-- download : Télévharger automatiquement le pdf -->
+        <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
+       <a href="assets/pdf/Mentions légales.pdf" download="document.pdf" >Mentions Légales</a>
 </body>
 </html>
