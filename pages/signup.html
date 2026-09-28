@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySHop - Inscription</title>
+
+     <!-- Lien FontAwsome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+     <!-- Lien vers Fichier CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
@@ -15,7 +20,7 @@
         <!-- Créer une liste non ordonnée -->
         <!-- Menu de navigation -->
         <nav>
-            <ul>
+            <ul class="menu">
                 <li>
                     <a href="../index.html">Acceuil</a>
                 </li>
@@ -47,19 +52,19 @@
         <!-- method : comment envoyer les données (GET/POST) -->
         <!-- GET : récupération des données (rechercher/filtre) -->
         <!-- POST : Créer/Ajouter des données (inscription/connexion)-->
-        <form action="" method="">
+        <form class="form">
             <h2>Inscrption</h2>
             <!-- Boite spéciale pour regrouper des champs de formulaire liés -->
-            <fieldset>
+            <fieldset class="signup-fieldset">
                 <!-- Titre de cette boite -->
-                <legend>Informations Personnelles</legend>
+                <legend class="signup-legend">Informations Personnelles</legend>
 
                 <div>
                     <!-- for : indique à quel élément le label est associé -->
                     <!-- id : donne l'identifiant de cet element -->
                     <!-- for et id travaillent ensemble pour relier le label à son champ -->
                     <label for="nom">Nom :</label>
-                    <input type="text" id="nom" placeholder="Votre Nom" required>
+                    <input type="text" class="nom" id="nom" placeholder="Votre Nom" required>
                 </div>
 
                 <div>
@@ -73,8 +78,8 @@
                 </div>
             </fieldset>
 
-            <fieldset>
-                <legend>Informations Supplémentaires</legend>
+            <fieldset class="signup-fieldset">
+                <legend class="signup-legend">Informations Supplémentaires</legend>
 
                 <!-- Radio -->
                 <div>
@@ -116,6 +121,7 @@
     <!-- Pieds de page -->
     <!-- Liens vers : fb , insta -->
     <footer>
+        <h2>Contactez-Nous : </h2>
         <a href="https://www.decathlon.fr/" target="_blank">Facebook</a>
         <a href="https://www.decathlon.fr/" target="_blank">Instagram</a>
         <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->

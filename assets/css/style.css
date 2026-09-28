@@ -1,0 +1,153 @@
+/* Sélécteur universel : sélectionne tous les éléments HTML de la page */
+/* rénitialisation (reset) du site */
+* {
+    margin: 0;
+    padding: 0;
+    /* Gérer correctement la taille */
+    /* l'élément Div avec 300px du width : il correspond à la larguer totale de l'élément, bordure et padding compris */
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(223, 223, 223, 0.725);
+}
+
+/* content-box : Comprtement du CSS par défaut */
+/* largeur réelle => 300 contenu + 40px padding (padding-left + padding-right) + 10px bordure (border-left + border-right) = 350px */
+/* div {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid
+} */
+/* Header Footer */
+header , footer {
+    background-color: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* pour les "a" qui sont enfants de "header" */
+header a , footer a{
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+}
+
+img {
+    width: 200px;
+    height: 250px;
+}
+
+table img {
+    width: 100px;
+    height: 150px;
+}
+
+/* main */
+
+main {
+    /* une limite maximale, pas une largeur obligatoire */
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Formulaire : Inscription/connexion/contact */
+.form {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    /* 20px => marge en haut et en bas (axe vertical) */
+    /* auto => navigateru calcule auto les marges gauche/droite pour centrer l'élément horizontalement */
+    margin: 20px auto;
+    border: 1px solid rgb(175, 171, 171);
+    border-radius: 10px;
+}
+
+.signup-fieldset {
+    border: 1px solid rgb(175, 171, 171);
+    padding: 15px 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.signup-legend {
+    font-weight:bold;
+    padding: 5px;
+}
+
+.form div {
+    margin-bottom: 15px;
+}
+
+.form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(175, 171, 171);
+    border-radius: 5px;
+}
+
+#nom {
+    border: 2px dotted red;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/* .products-list h2 {
+    color: red;
+    font-size: larger;
+} */
+
+/* .titre-presentation{ */
+/* padding: 10px 15px 20px 5px; */
+    /* padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 5px; */
+/* border: 1px dashed #1e40af; */
+/* border-width: 1px;
+border-style: dashed;
+border-color: #1e40af; */
+/* margin: 50px; */
+/* } */

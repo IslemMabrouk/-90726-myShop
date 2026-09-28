@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - MyShop</title>
+
+     <!-- Lien FontAwsome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+     <!-- Lien vers Fichier CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
@@ -40,24 +45,30 @@
 
 
     <main>
-            <form >
+            <form class="form">
                 <h2>Contactez-Nous</h2>
-
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" placeholder="Votre nom" required> <br>
-
-                <label for="email">Email :</label>
-                <input type="email" id="email" placeholder="exemple@gmail.com" required> <br>
-
-                <label for="msg">Message :</label>
-                <textarea rows="2" id="msg" placeholder="Votre message" required></textarea> <br>
-
+            
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" placeholder="Votre nom" required> <br>
+                </div>
+            
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" placeholder="exemple@gmail.com" required> <br>
+                </div>
+                <div>
+                    <label for="msg">Message :</label>
+                    <textarea rows="2" id="msg" placeholder="Votre message" required></textarea> <br>
+                </div>
+            
                 <button type="submit">Envoyer</button>
             </form>
     </main>
 
     <!-- Pied de page -->
     <footer>
+         <h2>Contactez-Nous : </h2>
         <a href="https://www.decathlon.fr/" target="_blank">Facebook</a>
         <a href="https://www.decathlon.fr/" target="_blank">Instagram</a>
         <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
