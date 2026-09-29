@@ -135,9 +135,9 @@ button {
 /* Les articles produits */
 .product-card {
     background-color: #ececec;
-    max-width: 300px;
+    width: 300px;
     height: auto;
-    margin: 20px auto;
+    margin: 20px;
     padding: 15px;
     text-align: center;
     border-radius: 5px;
@@ -212,6 +212,17 @@ button:active {
     /* background-color: red; */
     font-size: 10px;
 }
+
+/* Le conteneur flex */
+.products-container {
+    /* la propriété principale de Flexbox */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 
 
 /* .products-list h2 {
