@@ -166,7 +166,7 @@ button {
 }
 
 .product-card p:last-of-type {
-    color: darkred;
+    /* color: darkred; */
     font-weight: 900;
     font-size: 20px;
 }
@@ -174,6 +174,43 @@ button {
 .product-card button {
     background-color: darkblue;
     border: none;
+}
+
+/* n'importe quel p à l'intérieur de lélément HTML ayant class product-card */
+/* .product-card p {
+    color: green;
+} */
+
+/* <p> enfants directs de lélément HTML ayant class product-card */
+/* .product-card > p {
+    color: aqua;
+} */
+
+/* le + pour indiquer "élément frère directement suivant */
+/* .product-card + p {
+    color: yellow;
+} */
+
+/* Quand la souris passe dessus */
+button:hover{
+    background-color: #f29831;
+    color: black;
+    font-size: 15px;
+}
+
+/* Quand l'utilisateur sélectionne un élement */
+input:focus {
+    border: 2px solid orange;
+    outline: none;
+}
+button:focus {
+    background-color: green;
+}
+
+/* pendant le clic */
+button:active {
+    /* background-color: red; */
+    font-size: 10px;
 }
 
 
