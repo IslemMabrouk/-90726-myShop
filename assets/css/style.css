@@ -191,6 +191,39 @@ button {
     color: yellow;
 } */
 
+/* Tableau */
+.table-container {
+    border: 2px solid grey;
+    border-radius: 10px;
+    /* overflow: hidden;*/  /*  cacher ce qui dépasse */
+    overflow-x: auto;  /* Si le contenu est trop large horizontalement, permet à l'utilisateur de le faire défiler  */
+}
+
+table {
+    /* Permet de fusionner les bordures des cellules d'un tableau */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background-color: antiquewhite;
+}
+
+th, td {
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+}
+
+/* thead th:first-child{
+    border-top-left-radius: 10px;
+}
+
+thead th:last-child{
+    border-top-left-radius: 10px;
+} */
+
+
 /* Quand la souris passe dessus */
 button:hover{
     background-color: #f29831;
