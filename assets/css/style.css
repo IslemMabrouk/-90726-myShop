@@ -35,7 +35,7 @@ header a , footer a{
 }
 
 h2 {
-    text-align: center;
+    text-align:center;
 }
 
 header ul {
@@ -136,7 +136,7 @@ button {
 .product-card {
     background-color: #ececec;
     width: 300px;
-    height: auto;
+    height: 450px;
     margin: 20px;
     padding: 15px;
     text-align: center;
@@ -247,13 +247,25 @@ button:active {
 }
 
 /* Le conteneur flex */
+/* Aligner les produits horizontalement */
 .products-container {
     /* la propriété principale de Flexbox */
-    display: flex;
-    /* flex-direction: column; */
+    display: flex;  /*flex-direction :row; */
+    /* height: 1500px; */
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center; /*center les éléments sur l'axe principale = axe horizontal */
+    align-items: center; /*  center les éléments sur l'axe secondaire = axe vertical */
 }
+
+/* Aligner les produits verticalement */
+/* .products-container { */
+    /* la propriété principale de Flexbox */
+    /* display: flex; */
+    /* height: 1500px; */
+    /* flex-direction: column;Choisir la direction des éléments : colonne */
+    /* justify-content: center;  center les éléments sur l'axe principale = axe vertical */
+    /* align-items: center; center les éléments sur l'axe secondaire = axe horizontal */
+/* } */
 
 
 
