@@ -20,6 +20,20 @@ body {
     padding: 20px;
     border: 5px solid
 } */
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
 /* Header Footer */
 header , footer {
     background-color: #1e40af;
@@ -36,10 +50,6 @@ header a , footer a{
 
 h2 {
     text-align:center;
-}
-
-header ul {
-    list-style: none;
 }
 
 img {
@@ -248,14 +258,14 @@ button:active {
 
 /* Le conteneur flex */
 /* Aligner les produits horizontalement */
-.products-container {
+/* .products-container { */
     /* la propriété principale de Flexbox */
-    display: flex;  /*flex-direction :row; */
+    /*display: flex;  /*flex-direction :row; */
     /* height: 1500px; */
-    flex-wrap: wrap;
-    justify-content:center; /*center les éléments sur l'axe principale = axe horizontal */
-    align-items: center; /*  center les éléments sur l'axe secondaire = axe vertical */
-}
+    /* flex-wrap: wrap; */
+    /*justify-content:center; /*center les éléments sur l'axe principale = axe horizontal */
+    /*align-items: center; /*  center les éléments sur l'axe secondaire = axe vertical */
+/* } */
 
 /* Aligner les produits verticalement */
 /* .products-container { */
@@ -268,22 +278,22 @@ button:active {
 /* } */
 
 
+/* Grid CSS */
+.products-container {
+    display: grid;
+    height: 1500px;
+    /* Décoouper ligne en morceaux */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 10px; */
+    /* Déplace la grille entière */
+    justify-content:center;
+    align-content: center;
+    /* Positionner les élements dans leur cellules */
+    justify-items: center;
+    align-items: center;
+}
 
-
-/* .products-list h2 {
-    color: red;
-    font-size: larger;
+/* .prod6 {
+    align-self: flex-end;
 } */
-
-/* .titre-presentation{ */
-/* padding: 10px 15px 20px 5px; */
-    /* padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 20px;
-    padding-left: 5px; */
-/* border: 1px dashed #1e40af; */
-/* border-width: 1px;
-border-style: dashed;
-border-color: #1e40af; */
-/* margin: 50px; */
-/* } */
