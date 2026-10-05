@@ -203,16 +203,15 @@ button {
 
 /* Tableau */
 .table-container {
-    border: 2px solid grey;
-    border-radius: 10px;
     /* overflow: hidden;*/  /*  cacher ce qui dépasse */
     overflow-x: auto;  /* Si le contenu est trop large horizontalement, permet à l'utilisateur de le faire défiler  */
 }
-
 table {
-    /* Permet de fusionner les bordures des cellules d'un tableau */
-    border-collapse: collapse;
-    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 thead {
@@ -225,13 +224,13 @@ th, td {
     text-align: center;
 }
 
-/* thead th:first-child{
+thead th:first-child{
     border-top-left-radius: 10px;
 }
 
 thead th:last-child{
-    border-top-left-radius: 10px;
-} */
+    border-top-right-radius: 10px;
+}
 
 
 /* Quand la souris passe dessus */
