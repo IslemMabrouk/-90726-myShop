@@ -4,12 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil - MyShop</title>
+    <meta name="description"
+        content="MyShop, votre boutique en ligne de vetements et accessoires tendence pour femme, homme et enfants">
+    <meta name="robots" content="index, follow">
+    <title>MyShop - Boutique de vetement et accessoires en ligne</title>
 
     <!-- Lien FontAwsome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-     <!-- Lien vers Fichier CSS -->
-      <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!-- Lien Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Lien vers Fichier CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRFF5HVHNP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LRFF5HVHNP');
+    </script>
 </head>
 
 <body>
@@ -23,7 +39,7 @@
         <nav >
             <ul>
                 <li>
-                    <a href="index.html">Acceuil</a>
+                    <a href="index.html">Accueil</a>
                 </li>
                 <li>
                     <a href="pages/about.html">A propos</a>
@@ -38,7 +54,7 @@
                     <a href="pages/signin.html">Connexion</a>
                 </li>
                 <li>
-                    <a href="pages/cart.html">Panier<a>
+                    <a href="pages/cart.html">Panier</a>
                 </li>
                 <li>
                     <a href="pages/contact.html">Contact</a>
@@ -53,7 +69,7 @@
         <section>
             <h2 class="titre-presentation" >Bienvenue sur notre boutique</h2>
             <p class="presentation">
-                <b>MyShop</b> est <strong>un boutique de vente en ligne</strong>.
+                <b>MyShop</b> est <strong>une boutique de vente en ligne</strong>.
             </p>
             <p class="presentation">
                 <i>Découvrez</i> <span>nos robes, chemises, jeans</span>  et accessoires tendance et <em>profitez de nos promotions</em> .
@@ -88,6 +104,7 @@
              <div class="products-container"> <!-- Flex Container -->
                 <!-- Produit 1 -->
                 <article class="product-card"> <!-- Flex Item -->
+                    <span class="badge">Promo</span>
                     <h3>Veste Femme</h3>
                     <p>Ce produit est <span>fortement recommandé</span> par nos clients</p>
                     <img src="assets/images/veste-femme.webp" alt="Veste Femme">
@@ -120,36 +137,36 @@
 
                 <article class="product-card"> <!-- Flex Item -->
                     <h3>Prd 4</h3>
-                    <img src="assets/images/jean-homme.jfif" alt="Robe soirée en bleu">
+                    <img src="assets/images/jean-homme.jfif" alt="Jean Homme">
                     <p>Description Produit 3</p>
                     <p>Prix : 25 £</p>
                     <button type="button">Acheter</button>
                 </article>
 
-                 <article class="product-card"> <!-- Flex Item -->
+                 <article class="product-card prod"> <!-- Flex Item -->
                     <h3>Prd 5</h3>
-                    <img src="assets/images" alt="Robe soirée en bleu">
+                    <img src="assets/images" alt="Produit 5">
                     <p>Description Produit 3</p>
                     <p>Prix : 25 £</p>
                     <button type="button">Acheter</button>
                 </article>
 
-                 <article class="product-card prod6"> <!-- Flex Item -->
+                 <article class="product-card prod"> <!-- Flex Item -->
                     <h3>Prd 6</h3>
-                    <img src="assets/images" alt="Robe soirée en bleu">
+                    <img src="assets/images" alt="Produit 6">
                     <p>Description Produit 6</p>
                     <p>Prix : 25 £</p>
-                    <button type="button">Acheter</button>
+                    <button type="button" class="btn btn-danger">Acheter</button>
                 </article>
             </div>
 
             <!-- Liste des produits dans un tableau -->
             <div class="table-container">
-                <table>
+                <table >
                     <!-- Titre du tableau -->
                     <caption>Liste des produits</caption>
                     <!-- Entete du tableau -->
-                    <thead>
+                    <thead class="table-secondary">
                         <!-- Ligne du tableau -->
                         <tr>
                             <!-- th : Cellule de l'entete du tableau -->
@@ -164,11 +181,12 @@
             
                     <!-- Corps du tableau -->
                     <tbody>
-                        <tr>
+                        <tr >
                             <!-- td : Cellule du tableau -->
                             <td rowspan="2">Homme</td>
                             <td>Chemise</td>
                             <td>
+                                <span class="badge-table">Promo</span>
                                 <img src="assets/images/chemise-homme.webp" alt="Chemise Homme">
                             </td>
                             <td>Description du produit 1</td>
@@ -221,6 +239,13 @@
                 <mark>-20% sur les accessoires !</mark>
             </p>
         </aside>
+
+        <button class="scroll-top" aria-label="Retourner en Haut de la page "><i class="fa-solid fa-arrow-up"></i></button>
+        
+        <video >
+            <source src="" type="">
+            <track src="sous-titres-fr.vtt" srclang="fr"></track>
+        </video>
     </main>
     <!-- Pieds de page -->
     <!-- Liens vers : fb , insta -->
@@ -229,7 +254,7 @@
         <a href="https://www.decathlon.fr/" target="_blank">
             <i class="fa-brands fa-facebook"></i> Fb
         </a>
-        <a href="https://www.decathlon.fr/" target="_blank">
+        <a href="https://www.decathlon.fr/" target="_blank" aria-label="Lien vers Instagram">
             <i class="fa-brands fa-square-instagram"></i>
         </a>
         <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
@@ -240,6 +265,9 @@
         <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
         <a href="assets/pdf/Mentions-légales.pdf" download="document.pdf">Mentions Légales</a>
     </footer>
+
+    <!-- Lien Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>

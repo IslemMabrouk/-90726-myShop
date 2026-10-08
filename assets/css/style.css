@@ -26,6 +26,15 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 100;
+    /* Coller Header en Haut de la page */
+    position: sticky;
+    top: 0;
+    /* Utilisation du position fixed */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
 }
 
 header ul {
@@ -144,6 +153,7 @@ button {
 
 /* Les articles produits */
 .product-card {
+    position: relative;
     background-color: #ececec;
     width: 300px;
     height: 450px;
@@ -153,13 +163,24 @@ button {
     border-radius: 5px;
 }
 
+.badge {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color:darkred;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
 .product-card h3 {
     font-size: 20px;
     font-weight: bolder;
 }
 
 .product-card p span {
-    color: #f29831;
+    color: rgb(153, 4, 4);
     font-weight: bold;
 }
 
@@ -207,11 +228,16 @@ button {
     overflow-x: auto;  /* Si le contenu est trop large horizontalement, permet à l'utilisateur de le faire défiler  */
 }
 table {
+    width: 100%;
     border-collapse: separate;
     border-spacing: 0;
     border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
+}
+
+table:hover{
+    background-color: #f29831;
 }
 
 thead {
@@ -287,12 +313,50 @@ button:active {
     /* gap: 10px; */
     /* Déplace la grille entière */
     justify-content:center;
-    align-content: center;
+    /* align-content: center; */
     /* Positionner les élements dans leur cellules */
-    justify-items: center;
-    align-items: center;
+    /* justify-items: center; */
+    /* align-items: center; */
 }
 
-/* .prod6 {
+.prod {
     align-self: flex-end;
-} */
+}
+
+/* Position des éléments */
+.titre-presentation {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+td{
+    position: relative;
+}
+
+.badge-table {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}

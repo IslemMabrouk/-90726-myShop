@@ -4,12 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Créez votre compte pour accéder à votre espace personnel et profiter de nos produits et services">
     <title>MySHop - Inscription</title>
 
-     <!-- Lien FontAwsome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-     <!-- Lien vers Fichier CSS -->
+    <!-- Lien FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!-- Lien vers Fichier CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRFF5HVHNP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LRFF5HVHNP');
+    </script>
 </head>
 
 <body>
@@ -22,7 +34,7 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="../index.html">Acceuil</a>
+                    <a href="../index.html">Accueil</a>
                 </li>
                 <li>
                     <a href="about.html">A propos</a>
@@ -37,7 +49,7 @@
                     <a href="signin.html">Connexion</a>
                 </li>
                 <li>
-                    <a href="cart.html">Panier<a>
+                    <a href="cart.html">Panier</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -78,12 +90,13 @@
                 </div>
             </fieldset>
 
-            <fieldset class="signup-fieldset">
-                <legend class="signup-legend">Informations Supplémentaires</legend>
+            <!-- <fieldset class="signup-fieldset"> -->
+                <!-- <legend class="signup-legend">Informations Supplémentaires</legend> -->
 
                 <!-- Radio -->
-                <div>
-                    <label>Genre :</label>
+                <fieldset class="signup-fieldset">
+                    <legend class="signup-legend">Genre :</legend>
+
                     <input type="radio" id="femme" name="genre" value="femme">
                     <label for="femme">Femme</label>
 
@@ -92,17 +105,18 @@
 
                     <input type="radio" id="autre" name="genre" value="autre">
                     <label for="autre">Autre</label>
-                </div>
+                </fieldset>
 
                 <!-- checkbox -->
-                <div>
-                    <label> Intérets : </label>
+                <fieldset class="signup-fieldset">
+                    <legend class="signup-legend"> Intérets : </legend>
+
                     <input type="checkbox" name="interets" id="vetements" value="vetements">
                     <label for="vetements"> Vetements </label>
 
                     <input type="checkbox" name="interets" id="accessoires" value="accessoires">
-                    <label for="vetements"> Accessoires </label>
-                </div>
+                    <label for="accessoires"> Accessoires </label>
+                </fieldset>
 
                 <!-- Liste déroulante  -->
                 <div>
@@ -112,7 +126,7 @@
                         <option value="tunisie">Tunisie</option>
                     </select>
                 </div>
-            </fieldset>
+            <!-- </fieldset> -->
             <button type="submit">S'inscrire</button>
         </form>
     </main>
@@ -130,7 +144,7 @@
         <a href="tel:123456789">123456789</a>
         <!-- download : Télévharger automatiquement le pdf -->
         <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
-        <a href="assets/pdf/Mentions légales.pdf" download="document.pdf">Mentions Légales</a>
+        <a href="assets/pdf/Mentions-légales.pdf" download="document.pdf">Mentions Légales</a>
     </footer>
 </body>
 
