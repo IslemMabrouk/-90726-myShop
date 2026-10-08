@@ -109,7 +109,39 @@ section {
     text-decoration: none;
 }
 
+/* category */
+.category-title {
+    text-align: center;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
 
+.category-card {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;  /*cacher tt ce qui dépasse de la boite de l'élément */
+    width: 150px;
+}
+
+.categories img {
+     width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.category-card:hover {
+    /* Ajouter une ombre autour de la carte au survol de la souris */
+    box-shadow: 0 10px 15px 5px rgba(118, 112, 112, 0.616);
+    /* Déplacer légèrement la carte vers le haut avec "translateY(-5px)" et l'agrandir avec "scale(1.1)" au survol */
+    transform: translateY(-5px) scale(1.1);
+}
 
 /* Formulaire : Inscription/connexion/contact */
 .form {
