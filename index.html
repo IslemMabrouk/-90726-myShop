@@ -36,49 +36,65 @@
 
         <!-- Créer une liste non ordonnée -->
         <!-- Menu de navigation -->
-        <nav >
-            <ul>
-                <li>
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="pages/about.html">A propos</a>
-                </li>
-                <li>
-                    <a href="pages/products.html">Produits</a>
-                </li>
-                <li>
-                    <a href="pages/signup.html">Inscription</a>
-                </li>
-                <li>
-                    <a href="pages/signin.html">Connexion</a>
-                </li>
-                <li>
-                    <a href="pages/cart.html">Panier</a>
-                </li>
-                <li>
-                    <a href="pages/contact.html">Contact</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/about.html">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/products.html">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/signup.html">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/signin.html">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/cart.html">Panier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Contenu principal -->
     <main>
         <!-- Présentation du site -->
-        <section>
-            <h2 class="titre-presentation" >Bienvenue sur notre boutique</h2>
-            <p class="presentation">
-                <b>MyShop</b> est <strong>une boutique de vente en ligne</strong>.
-            </p>
-            <p class="presentation">
-                <i>Découvrez</i> <span>nos robes, chemises, jeans</span>  et accessoires tendance et <em>profitez de nos promotions</em> .
-            </p>
+        <section class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Bienvenue sur notre boutique</h2>
+                        <p class="presentation">
+                            <b>MyShop</b> est <strong>une boutique de vente en ligne</strong>.
+                        </p>
+                        <p class="presentation">
+                            <i>Découvrez</i> <span>nos robes, chemises, jeans</span> et accessoires tendance et <em>profitez de
+                                nos promotions</em> .
+                        </p>
+                        <a href="pages/about.html">Découvrir notre service</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
         <section>
-            <h2  class="titre-presentation" id="categories">Catégories</h2>
+            <h2  id="categories">Catégories</h2>
             <!-- Liste Ordonnée -->
             <ol>
                 <li>Femme</li>

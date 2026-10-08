@@ -6,10 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Produits - MyShop</title>
 
-     <!-- Lien FontAwsome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-     <!-- Lien vers Fichier CSS -->
+    <!-- Lien Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Lien FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!-- Lien vers Fichier CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRFF5HVHNP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LRFF5HVHNP');
+    </script>
 </head>
 
 <body>
@@ -20,7 +33,7 @@
         <!-- Menu de navigation simple -->
         <ul>
                 <li>
-                    <a href="../index.html">Acceuil</a>
+                    <a href="../index.html">Accueil</a>
                 </li>
                 <li>
                     <a href="about.html">A propos</a>
@@ -47,32 +60,40 @@
         <section>
             <h2>Nos Produits</h2>
 
-            <!-- Produit 1 -->
-            <article class="product-card">
-                <h3>Veste Femme</h3>
-                <img src="../assets/images/veste-femme.webp" alt="Veste Femme" style="width: 200px;">
-                <p>Description Produit 1</p>
-                <p>Prix : 20 £</p>
-                <button type="button">Acheter</button>
-            </article>
-            
-            <!-- Produit 2 -->
-            <article class="product-card">
-                <h3>Chemise Homme</h3>
-                <img src="../assets/images/chemise-homme.webp" alt="Chemise Homme" style="width: 200px;">
-                <p>Description Produit 2</p>
-                <p>Prix : 10 £</p>
-                <button type="button">Acheter</button>
-            </article>
-            
-            <!-- Produit 3 -->
-            <article class="product-card">
-                <h3>Robe Soirée</h3>
-                <img src="../assets/images/robe-femme.jpg" alt="Robe soirée en bleu" style="width: 200px;">
-                <p>Description Produit 3</p>
-                <p>Prix : 25 £</p>
-                <button type="button">Acheter</button>
-            </article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Produit 1 -->
+                        <article class="product-card">
+                            <h3>Veste Femme</h3>
+                            <img src="../assets/images/veste-femme.webp" alt="Veste Femme" style="width: 200px;">
+                            <p>Description Produit 1</p>
+                            <p>Prix : 20 £</p>
+                            <button type="button">Acheter</button>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Produit 2 -->
+                        <article class="product-card">
+                            <h3>Chemise Homme</h3>
+                            <img src="../assets/images/chemise-homme.webp" alt="Chemise Homme" style="width: 200px;">
+                            <p>Description Produit 2</p>
+                            <p>Prix : 10 £</p>
+                            <button type="button">Acheter</button>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Produit 3 -->
+                        <article class="product-card">
+                            <h3>Robe Soirée</h3>
+                            <img src="../assets/images/robe-femme.jpg" alt="Robe soirée en bleu" style="width: 200px;">
+                            <p>Description Produit 3</p>
+                            <p>Prix : 25 £</p>
+                            <button type="button">Acheter</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
@@ -91,7 +112,8 @@
         <a href="assets/pdf/Mentions légales.pdf" download="document.pdf">Mentions Légales</a>
     </footer>
 
-</body>
+<!-- Lien Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>

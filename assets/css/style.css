@@ -87,6 +87,30 @@ section {
     border-radius: 10px;
 }
 
+/* Banner */
+.banner {
+    height: 600px;
+    background-image: url(../images/slider-bg.jpg);
+    background-size: cover;
+    background-position: centre;
+    background-repeat: no-repeat;
+}
+
+.banner h2 {
+    text-align: left;
+    color: #d86800;
+}
+
+.banner a {
+    background-color: #d86800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
 /* Formulaire : Inscription/connexion/contact */
 .form {
     background-color: white;
@@ -324,11 +348,6 @@ button:active {
 }
 
 /* Position des éléments */
-.titre-presentation {
-    position: relative;
-    top: 20px;
-    left: 30px;
-}
 
 .scroll-top {
     position: fixed;
