@@ -1,39 +1,39 @@
 // Déclaration des variables
-let nom ="Islem";
-let age = 32;
+// let nom ="Islem";
+// let age = 32;
 
-console.log(nom);
-console.log(age);
+// console.log(nom);
+// console.log(age);
 
 
-let score = 10;
-score=15;
+// let score = 10;
+// score=15;
 
-console.log(score);
+// console.log(score);
 
-const PI =3.14;
+// const PI =3.14;
 // PI = 3.14159;  //INTERDIT (modifier la valeur d'une constante)
 
-console.log(PI);
+// console.log(PI);
 
 // La concaténation des chaines de caractères
-let prenom = "Islem";
-nom = "Ben Mabrouk";
+// let prenom = "Islem";
+// nom = "Ben Mabrouk";
 
-let nomComplet = prenom + " " + nom;
-console.log(nomComplet);
+// let nomComplet = prenom + " " + nom;
+// console.log(nomComplet);
 
 // let test = "Je suis " + prenom + " " + nom;
-let test = `Je suis ${prenom} ${nom}`;
-console.log(test);
-console.log("J'ai ", age, " ans");
+// let test = `Je suis ${prenom} ${nom}`;
+// console.log(test);
+// console.log("J'ai ", age, " ans");
 
-let name = "islem";
-let msg = name;
-console.log(msg);
+// let name = "islem";
+// let msg = name;
+// console.log(msg);
 
 // window.name = "Mon site"
-console.log(window.name);
+// console.log(window.name);
 
 
 // EX3
@@ -216,25 +216,117 @@ console.log(window.name);
 // }
 
 
-let nombre = 20;
+// let nombre = 20;
 
-console.log("tester while :");
-while (nombre<5) {
-    console.log("Bonjour");
-}
+// console.log("tester while :");
+// while (nombre<5) {
+//     console.log("Bonjour");
+// }
 
-console.log("Tester do .. while :");
-do {
-    console.log("Bonjour");
-} while (nombre<5);
+// console.log("Tester do .. while :");
+// do {
+//     console.log("Bonjour");
+// } while (nombre<5);
 
 
 //Demander le mdp à l'utilisateur
-let password ="";
-while (password != "1234") {
-    password = prompt("Entrer votre mot de passe");
+// let password ="";
+// while (password != "1234") {
+//     password = prompt("Entrer votre mot de passe");
+// }
+
+// do {
+//     password = prompt("Entrer votre mot de passe");
+// } while (password != "1234");
+
+
+
+// TP3 EX4
+// let nombreSecret = 4;
+// let compteur = 0;
+// let devine;
+
+// do {
+//     devine = Number(prompt("Devine le nombre secret (entre 1 et 5) : "));
+//     compteur++;
+//     if (devine !== nombreSecret) {
+//         alert("Faux! Essaie encore.");
+//     }
+// } while (devine !== nombreSecret);
+
+// alert("Bravo! tu as trouvé le nombre " + nombreSecret + " après " + compteur + " essais.");
+
+
+// TP3 EX6
+// 1.Demander le nombre de produits
+// let nbrProduits = Number(prompt("Combien de produits souhaitez-vous acheter?"));
+// let prix;
+// let montantTotal = 0;
+
+// 2.Saisir le prix de chaque produit et faire la somme
+// for (let i = 1; i <= nbrProduits; i++) {
+    // prix = Number(prompt("Saisie le prix du produit " + i + " :"));
+    //Ajouter le prix au montant total
+    // montantTotal += prix; //montantTotal = montantTotal +prix
+    // console.log(montantTotal);
+    
+// };
+//i=1 => prixProduit1 => montant = 0 + prix1; i=2 => prix2 => montant = prix1 + prix2..... i=4
+
+// 3.calculer la reduction
+// let reduction =0;
+// if (montantTotal>=200) {
+//     reduction = montantTotal * 0.1;
+// }
+
+// 4.calculer le montant final
+// let montantFinal = montantTotal - reduction;
+
+// 5.Aficher les résultats
+// console.log("Montant total avant réduction : " + montantTotal);
+// console.log("Montant de la réduction : ", reduction);
+// console.log("Montant final à payer : ", montantFinal);
+
+
+// Functions
+function direBonjour() {
+    console.log("Bonjour tout le monde !");
 }
 
-do {
-    password = prompt("Entrer votre mot de passe");
-} while (password != "1234");
+direBonjour();
+
+function bonjourUtilisateur(nom) {
+    console.log("Bonjour ", nom);
+}
+
+let nom ="Islem";
+bonjourUtilisateur(nom);
+
+function calculerSomme(a,b) {
+    return a+b;
+}
+
+let resultat = calculerSomme(5,6);
+console.log(resultat);
+
+let user1 = "Islem";
+let user2 = "Skander";
+let user3 = "Marion";
+
+let tab = ["Islem", "Skander", "Marion"];
+console.log(tab);
+console.log("Le premier élément du tableau : ",tab[0]);
+console.log("Le 2ème élément du tableau : ",tab[1]);
+console.log(tab[3]);  //undefined : la valeur n'existe pas à cet indice/position
+
+//Modifier un élement du tableau
+tab[0] = "Randy";
+console.log("Tableau apres modif : ",tab);
+// Connaitre la taille du tableau
+console.log("Taille du tableau : ", tab.length); //3
+
+
+
+
+
+
