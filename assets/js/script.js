@@ -289,41 +289,118 @@
 
 
 // Functions
-function direBonjour() {
-    console.log("Bonjour tout le monde !");
-}
+// function direBonjour() {
+//     console.log("Bonjour tout le monde !");
+// }
 
-direBonjour();
+// direBonjour();
 
-function bonjourUtilisateur(nom) {
-    console.log("Bonjour ", nom);
-}
+// function bonjourUtilisateur(nom) {
+//     console.log("Bonjour ", nom);
+// }
 
-let nom ="Islem";
-bonjourUtilisateur(nom);
+// let nom ="Islem";
+// bonjourUtilisateur(nom);
 
-function calculerSomme(a,b) {
-    return a+b;
-}
+// function calculerSomme(a,b) {
+//     return a+b;
+// }
 
-let resultat = calculerSomme(5,6);
-console.log(resultat);
+// let resultat = calculerSomme(5,6);
+// console.log(resultat);
 
-let user1 = "Islem";
-let user2 = "Skander";
-let user3 = "Marion";
+// let user1 = "Islem";
+// let user2 = "Skander";
+// let user3 = "Marion";
 
-let tab = ["Islem", "Skander", "Marion"];
-console.log(tab);
-console.log("Le premier élément du tableau : ",tab[0]);
-console.log("Le 2ème élément du tableau : ",tab[1]);
-console.log(tab[3]);  //undefined : la valeur n'existe pas à cet indice/position
+// let tab = ["Islem", "Skander", "Marion"];
+// console.log(tab);
+// console.log("Le premier élément du tableau : ",tab[0]);
+// console.log("Le 2ème élément du tableau : ",tab[1]);
+// console.log(tab[3]);  //undefined : la valeur n'existe pas à cet indice/position
 
 //Modifier un élement du tableau
-tab[0] = "Randy";
-console.log("Tableau apres modif : ",tab);
+// tab[0] = "Randy";
+// console.log("Tableau apres modif : ",tab);
 // Connaitre la taille du tableau
-console.log("Taille du tableau : ", tab.length); //3
+// console.log("Taille du tableau : ", tab.length); //3
+
+//TP4 EX5
+// courses = ["pain", "lait", "oeufs"];
+// courses.push("fromage");
+// courses.unshift("beurre");
+
+//supprimer "Lait"
+// let indexLait = courses.indexOf("lait");
+// console.log(indexLait);
+// if (indexLait !== -1) {
+    // courses.splice(indexLait, 1); //splice(2,1)
+// }
+
+// console.log(courses);
+
+//Remplacer "Oeufs"
+// let indexOeufs = courses.indexOf("oeufs");
+// console.log(indexOeufs);
+// if (indexOeufs !== -1) {
+    // courses[indexOeufs] = "yaourt"; //Remplacer directement l'élément
+// }
+
+// console.log("Tableau final des courses : ", courses);
+
+// courses.splice(0, 1, "test"); //Supprimer un élement et insèrer le nouveau à sa place
+// console.log(courses);
+
+// Ajouter un élément dans un tableau avec splice()
+// courses.splice(1, 0, "nouvelElement");
+// console.log(courses);
+
+
+// TP5
+let utilisateurs = [];
+
+utilisateurs = ["Islem", "SKANDER", "Randy", "Emmanuel", "Alex"];
+
+// Function pour ajouter un user
+function ajouterUtilisateur(element, tab) {
+    tab.push(element);
+    console.log("Elément ajouté !");
+}
+
+ajouterUtilisateur("Dominique", utilisateurs);  //utilisateurs.push("Dominique");
+ajouterUtilisateur("Sarra", utilisateurs);
+console.log(utilisateurs);
+
+for (let i = 0; i < utilisateurs.length; i++) {
+    console.log(utilisateurs[i]);
+}
+
+console.log(utilisateurs.indexOf("Islem"));
+console.log(utilisateurs.indexOf("test"));
+
+
+function verifierUtilisateur(utilisateur) {
+    if (utilisateurs.find((element)=> element === utilisateur)) {
+        console.log("Utilsateur trouvé!");
+    } else {
+        console.log("Utilisateur non trouvé!");
+    }
+}
+console.log("Find : ", utilisateurs.find((el)=> el === "aaa")); //undefined
+verifierUtilisateur("Marion");
+
+for (let i = 0; i < utilisateurs.length; i++) {
+    if (utilisateurs[i].toLowerCase().includes("a")) {
+        console.log(utilisateurs[i]);
+    }
+}
+
+
+
+ 
+
+
+
 
 
 
