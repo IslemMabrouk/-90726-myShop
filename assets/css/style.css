@@ -362,14 +362,14 @@ button:active {
 
 /* Le conteneur flex */
 /* Aligner les produits horizontalement */
-/* .products-container { */
+.products-container {
     /* la propriété principale de Flexbox */
-    /*display: flex;  /*flex-direction :row; */
+    display: flex;  /*flex-direction :row; */
     /* height: 1500px; */
-    /* flex-wrap: wrap; */
-    /*justify-content:center; /*center les éléments sur l'axe principale = axe horizontal */
-    /*align-items: center; /*  center les éléments sur l'axe secondaire = axe vertical */
-/* } */
+    flex-wrap: wrap;
+    justify-content:center; /*center les éléments sur l'axe principale = axe horizontal */
+    align-items: center; /*  center les éléments sur l'axe secondaire = axe vertical */
+}
 
 /* Aligner les produits verticalement */
 /* .products-container { */
@@ -383,24 +383,24 @@ button:active {
 
 
 /* Grid CSS */
-.products-container {
+/* .products-container {
     display: grid;
-    height: 1500px;
+    height: 1500px; */
     /* Décoouper ligne en morceaux */
     /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     /* gap: 10px; */
     /* Déplace la grille entière */
-    justify-content:center;
+    /* justify-content:center; */
     /* align-content: center; */
     /* Positionner les élements dans leur cellules */
     /* justify-items: center; */
     /* align-items: center; */
-}
+/* } */
 
-.prod {
+/* .prod {
     align-self: flex-end;
-}
+} */
 
 /* Position des éléments */
 

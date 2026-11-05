@@ -357,53 +357,131 @@
 
 
 // TP5
-let utilisateurs = [];
+// let utilisateurs = [];
 
-utilisateurs = ["Islem", "SKANDER", "Randy", "Emmanuel", "Alex"];
+// utilisateurs = ["Islem", "SKANDER", "Randy", "Emmanuel", "Alex"];
 
 // Function pour ajouter un user
-function ajouterUtilisateur(element, tab) {
-    tab.push(element);
-    console.log("Elément ajouté !");
+// function ajouterElement(element, tab) {
+//     tab.push(element);
+//     console.log("Elément ajouté !");
+// }
+
+// let test = [5,4,15,20];
+// ajouterElement(6, test);
+// console.log("Afficher test ",test);
+
+
+// ajouterElement("Dominique", utilisateurs);  //utilisateurs.push("Dominique");
+// ajouterElement("Sarra", utilisateurs);
+// console.log(utilisateurs);
+
+// for (let i = 0; i < utilisateurs.length; i++) {
+//     console.log(utilisateurs[i]);
+// }
+
+// console.log(utilisateurs.indexOf("Islem"));
+// console.log(utilisateurs.indexOf("test"));
+
+
+// function verifierUtilisateur(utilisateur) {
+//     if (utilisateurs.find((element)=> element === utilisateur)) {
+//         console.log("Utilsateur trouvé!");
+//     } else {
+//         console.log("Utilisateur non trouvé!");
+//     }
+// }
+// console.log("Find : ", utilisateurs.find((el)=> el === "aaa")); //undefined
+// verifierUtilisateur("Marion");
+
+// for (let i = 0; i < utilisateurs.length; i++) {
+//     if (utilisateurs[i].toLowerCase().includes("a")) {
+//         console.log(utilisateurs[i]);
+//     }
+// }
+
+
+// Manipulation du DOM
+// const titreSectrionProduit = document.getElementById('products');
+// console.log(titreSectrionProduit);
+// const titreH2 = document.querySelector('#products');
+// console.log(titreH2);
+
+
+// const productCards = document.getElementsByClassName('product-card');
+// console.log(productCards);
+// console.log("1er Article : ", productCards[0]);
+
+// const articles = document.getElementsByTagName('article');
+// console.log("Exemple avec Tag name : " ,articles);
+
+// const articlesSelector = document.querySelector('article');
+// console.log("Exemple avec Query Selector : ", articlesSelector);
+
+// const allArticles = document.querySelectorAll('article')
+// console.log("Exemple avec Query Selector All : ", allArticles);
+
+
+//Modifier text à partir du fichier js 
+const titreSectrionProduit = document.getElementById('products');
+titreSectrionProduit.textContent = "La liste de nos produits";
+
+const testH2 = document.getElementsByClassName('testH2');
+// Retourner une collection HTMl qui contient  un élement
+console.log(testH2);
+testH2[0].textContent ="<strong>aaaa</strong>"; //Afficher la balise strong comme un text
+
+const descriptionP1 = document.getElementById('descriptionP1');
+// Injecter du HTML à partir du JS
+descriptionP1.innerHTML = "<strong>Veste Femme Marron</strong>";
+// Changer le style css d'un text
+descriptionP1.style.color = "red";
+descriptionP1.style.fontSize = "20px"
+
+// TP6 ex2
+const titres = document.getElementsByClassName('titreH3');
+const titres2 = document.querySelectorAll('.titreH3');
+const titres3 = document.querySelectorAll('.product-card h3');
+console.log(titres);
+console.log(titres2);
+console.log(titres3);
+// titres[0].style.color = "red";
+// titres[1].style.color = "red";
+// titres[3].style.color = "red";
+
+// Parcourir HTML COLLECTION
+// for (let i = 0; i < titres.length; i++) {
+    // titres[i].style.color = "red";
+// }
+
+// Parcourir NodeList/Tableau
+titres3.forEach((titre) => {
+    titre.style.color = "green";
+    // titre.textContent = titre.textContent.toUpperCase();
+    titre.style.textTransform = "uppercase";
+});
+
+// TP6 EX3
+// const btns = document.querySelectorAll('button');
+
+// btns.forEach((btn) => {
+//     btn.textContent = "Ajouter au panier";
+//     btn.style.backgroundColor ="green";
+// })
+
+// TP6 EX4
+const btnScroll = document.querySelector(".scroll-top");
+console.log(btnScroll);
+
+// Ajouter un évenement clic
+// btnScroll.addEventListener("click", function() {
+    // btnScroll.style.backgroundColor = "grey";
+    // btnScroll.textContent = "cliqué!";
+//     alert("Cliqué!");
+// });
+
+function afficherAlert() {
+    alert("Here from fucntion afficherAlert!");
 }
-
-ajouterUtilisateur("Dominique", utilisateurs);  //utilisateurs.push("Dominique");
-ajouterUtilisateur("Sarra", utilisateurs);
-console.log(utilisateurs);
-
-for (let i = 0; i < utilisateurs.length; i++) {
-    console.log(utilisateurs[i]);
-}
-
-console.log(utilisateurs.indexOf("Islem"));
-console.log(utilisateurs.indexOf("test"));
-
-
-function verifierUtilisateur(utilisateur) {
-    if (utilisateurs.find((element)=> element === utilisateur)) {
-        console.log("Utilsateur trouvé!");
-    } else {
-        console.log("Utilisateur non trouvé!");
-    }
-}
-console.log("Find : ", utilisateurs.find((el)=> el === "aaa")); //undefined
-verifierUtilisateur("Marion");
-
-for (let i = 0; i < utilisateurs.length; i++) {
-    if (utilisateurs[i].toLowerCase().includes("a")) {
-        console.log(utilisateurs[i]);
-    }
-}
-
-
-
- 
-
-
-
-
-
-
-
 
 
