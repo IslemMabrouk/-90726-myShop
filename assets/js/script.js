@@ -423,28 +423,28 @@
 
 
 //Modifier text à partir du fichier js 
-const titreSectrionProduit = document.getElementById('products');
-titreSectrionProduit.textContent = "La liste de nos produits";
+// const titreSectrionProduit = document.getElementById('products');
+// titreSectrionProduit.textContent = "La liste de nos produits";
 
-const testH2 = document.getElementsByClassName('testH2');
+// const testH2 = document.getElementsByClassName('testH2');
 // Retourner une collection HTMl qui contient  un élement
-console.log(testH2);
-testH2[0].textContent ="<strong>aaaa</strong>"; //Afficher la balise strong comme un text
+// console.log(testH2);
+// testH2[0].textContent ="<strong>aaaa</strong>"; //Afficher la balise strong comme un text
 
-const descriptionP1 = document.getElementById('descriptionP1');
+// const descriptionP1 = document.getElementById('descriptionP1');
 // Injecter du HTML à partir du JS
-descriptionP1.innerHTML = "<strong>Veste Femme Marron</strong>";
+// descriptionP1.innerHTML = "<strong>Veste Femme Marron</strong>";
 // Changer le style css d'un text
-descriptionP1.style.color = "red";
-descriptionP1.style.fontSize = "20px"
+// descriptionP1.style.color = "red";
+// descriptionP1.style.fontSize = "20px"
 
 // TP6 ex2
-const titres = document.getElementsByClassName('titreH3');
-const titres2 = document.querySelectorAll('.titreH3');
-const titres3 = document.querySelectorAll('.product-card h3');
-console.log(titres);
-console.log(titres2);
-console.log(titres3);
+// const titres = document.getElementsByClassName('titreH3');
+// const titres2 = document.querySelectorAll('.titreH3');
+// const titres3 = document.querySelectorAll('.product-card h3');
+// console.log(titres);
+// console.log(titres2);
+// console.log(titres3);
 // titres[0].style.color = "red";
 // titres[1].style.color = "red";
 // titres[3].style.color = "red";
@@ -455,11 +455,11 @@ console.log(titres3);
 // }
 
 // Parcourir NodeList/Tableau
-titres3.forEach((titre) => {
-    titre.style.color = "green";
+// titres3.forEach((titre) => {
+    // titre.style.color = "green";
     // titre.textContent = titre.textContent.toUpperCase();
-    titre.style.textTransform = "uppercase";
-});
+//     titre.style.textTransform = "uppercase";
+// });
 
 // TP6 EX3
 // const btns = document.querySelectorAll('button');
@@ -470,8 +470,8 @@ titres3.forEach((titre) => {
 // })
 
 // TP6 EX4
-const btnScroll = document.querySelector(".scroll-top");
-console.log(btnScroll);
+// const btnScroll = document.querySelector(".scroll-top");
+// console.log(btnScroll);
 
 // Ajouter un évenement clic
 // btnScroll.addEventListener("click", function() {
@@ -480,8 +480,32 @@ console.log(btnScroll);
 //     alert("Cliqué!");
 // });
 
-function afficherAlert() {
-    alert("Here from fucntion afficherAlert!");
-}
+// function afficherAlert() {
+//     alert("Here from fucntion afficherAlert!");
+// }
 
 
+// TP6 EX5
+// Récupérer tous les prix
+// let prixProduits = document.querySelectorAll('.prix');
+// console.log(prixProduits);
+
+// Parcourir chaque prix
+// prixProduits.forEach((prix)=>{
+    // Récupérer le text du l'element prix
+    // let textePrix = prix.innerText;
+    // console.log(textePrix);
+
+    // Extraire uniquement le montant
+    // let montant = Number(textePrix.replace("Prix :","").replace("£","").trim());
+//     let montant =Number(textePrix.replace(/[^\d.]/g,""));
+//     console.log(montant);
+    
+//     if (montant < 25) {
+//         prix.style.color ="green"
+//     } else if (montant <= 50) {
+//         prix.style.color = "orange"
+//     } else {
+//         prix.style.color ="red"
+//     }
+// })

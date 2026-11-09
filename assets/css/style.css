@@ -187,6 +187,7 @@ section {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="number"],
 textarea,
 select {
     width: 100%;
@@ -321,10 +322,6 @@ table {
     border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
-}
-
-table:hover{
-    background-color: #f29831;
 }
 
 thead {
