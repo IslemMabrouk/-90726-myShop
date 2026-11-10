@@ -36,27 +36,8 @@ function afficherProduits() {
     //     </article>
     // `
 
-    let produits = [
-        {
-        nom:"Veste Femme",
-        description:"description produit1",
-        prix:20,
-        imgURL: "assets/images/veste-femme.webp"
-        },
-         {
-        nom:"Chemise Homme",
-        description:"description produit2",
-        prix:30,
-        imgURL: "assets/images/chemise-homme.webp"
-        },
-        {
-        nom:"Jean Homme",
-        description:"description produit3",
-        prix:15,
-        imgURL: "assets/images/jean-homme.jfif"
-        }
-    ];
-    console.log(produits);
+    let produits = JSON.parse(localStorage.getItem("listeProduits")) || [];
+    console.log("liste des produits à partir du LS : ",produits);
     // Injecter le contenu avec innerHTML 
     // container.innerHTML = "";
     // produits.forEach((produit)=>{
@@ -96,23 +77,3 @@ function afficherProduits() {
 }
 
 afficherProduits();
-
-function ajouterProduit() {
-    const form = document.getElementById('formProduct');
-
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); //Annuler le rechargement automatique de la page
-
-        // Récupérer les valeurs du formulair
-        let nom = document.getElementById('nom').value;
-        let prix = document.getElementById('prix').value;
-        let description = document.getElementById('descirption').value;
-        let imgURL =document.getElementById('imgURL').value
-        console.log(nom, prix, description, imgURL);
-        
-        
-        // alert("Produit ajouté !")
-    })
-}
-
-ajouterProduit();
