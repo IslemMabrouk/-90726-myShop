@@ -24,10 +24,10 @@ function sIsncrire() {
         let genre = document.querySelector('input[name=genre]:checked').value;
         // Récupérer valeur du checkbox
         let interets = [];
-        let interetsCheked = document.querySelectorAll('input[name=interets]:checked');
-        console.log(interetsCheked);
-        for (let i = 0; i < interetsCheked.length; i++) {
-            interets.push(interetsCheked[i].value);
+        let interetsChecked = document.querySelectorAll('input[name=interets]:checked');
+        console.log(interetsChecked);
+        for (let i = 0; i < interetsChecked.length; i++) {
+            interets.push(interetsChecked[i].value);
         };
         
         console.log(interets);

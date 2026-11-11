@@ -16,8 +16,8 @@ function ajouterProduit() {
 
         // 1.Récupérer les valeurs du formulaire
         let var1 = document.getElementById('nom').value;
-        let var2 = document.getElementById('prix').value;
-        let var3 = document.getElementById('descirption').value;
+        let var2 = document.getElementById('descirption').value;
+        let var3 = document.getElementById('prix').value;
         let var4 =document.getElementById('imgURL').value;
 
         // 2.Regrouper les valeurs du formulaire dans un objet
@@ -30,9 +30,10 @@ function ajouterProduit() {
         // }
         
         // 3.Sauvegarder dans localstorage
-        const produits =  JSON.parse(localStorage.getItem("listeProduits")) || [];
+        const produits = JSON.parse(localStorage.getItem("listeProduits")) || [];
         produits.push(produit);
         localStorage.setItem("listeProduits", JSON.stringify(produits));
+
         form.reset();
         alert("Produit ajouté !");
     })
