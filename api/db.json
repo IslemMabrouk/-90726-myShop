@@ -1,0 +1,12 @@
+{
+  "produits": [
+    {
+      "nom": "veste femme",
+      "description": "description",
+      "prix": "20",
+      "imgURL": "assets/images/veste-femme.webp",
+      "id": "deRY1DWPAG4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

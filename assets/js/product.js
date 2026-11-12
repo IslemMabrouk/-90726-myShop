@@ -11,7 +11,7 @@ function ajouterProduit() {
     const form = document.getElementById('formProduct');
 
     if (form) {
-        form.addEventListener("submit", function (event) {
+        form.addEventListener("submit", async function (event) {
         event.preventDefault(); //Annuler le rechargement automatique de la page
 
         // 1.Récupérer les valeurs du formulaire
@@ -30,12 +30,23 @@ function ajouterProduit() {
         // }
         
         // 3.Sauvegarder dans localstorage
-        const produits = JSON.parse(localStorage.getItem("listeProduits")) || [];
-        produits.push(produit);
-        localStorage.setItem("listeProduits", JSON.stringify(produits));
+        // const produits = JSON.parse(localStorage.getItem("listeProduits")) || [];
+        // produits.push(produit);
+        // localStorage.setItem("listeProduits", JSON.stringify(produits));
 
-        form.reset();
-        alert("Produit ajouté !");
+        // Appel du service
+        try {
+            const nouveauProduit = await ajouterProduitAPI(produit);
+            console.log(nouveauProduit);
+
+            form.reset();
+            alert("Produit ajouté !");
+            
+        } catch (error) {
+            console.log(error);
+            alert("Erreur lors de l'ajout du produit !")
+        }
+
     })
     }
 }
