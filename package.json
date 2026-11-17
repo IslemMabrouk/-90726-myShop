@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "axios": "^1.21.1",
+    "json-server": "^1.0.0-beta.15"
+  },
+  "name": "myshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IslemMabrouk/-90726-myShop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IslemMabrouk/-90726-myShop/issues"
+  },
+  "homepage": "https://github.com/IslemMabrouk/-90726-myShop#readme"
+}

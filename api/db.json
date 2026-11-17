@@ -6,6 +6,25 @@
       "prix": "20",
       "imgURL": "assets/images/veste-femme.webp",
       "id": "deRY1DWPAG4"
+    },
+    {
+      "nom": "Robe",
+      "description": "description",
+      "prix": "30",
+      "imgURL": "assets/images/veste-femme.webp",
+      "id": "feRY1DWPAG5"
+    }
+  ],
+  "panier": [
+    {
+      "produitID": "deRY1DWPAG4",
+      "quantite": 1,
+      "id": "5wRWdX-7M9o"
+    },
+    {
+      "produitID": "feRY1DWPAG5",
+      "quantite": 1,
+      "id": "Lrfk1MSWEtc"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
