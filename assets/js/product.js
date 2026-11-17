@@ -1,3 +1,5 @@
+import { ajouterProduitAPI } from "./services/productService.js";
+
 class Produit {
     constructor(nomProduit, descriptionProduit, prixProduit, imgURLProduit){
         this.nom = nomProduit;
